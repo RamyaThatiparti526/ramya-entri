@@ -213,8 +213,8 @@ else
   
 }
 
-let a=18;
-let b=true;
+//let a=18; i have given input 18 we should enter it
+//let b=true;i have given input 18 we should enter it
 console.log (calculateTicketPrice (a,b));
 
 
