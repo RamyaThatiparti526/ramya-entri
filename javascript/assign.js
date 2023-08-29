@@ -201,7 +201,7 @@ Write a function calculateTicketPrice that takes two parameters: a person's age 
 they have a student ID (true or false). If the person is under 18 or a student, they get a discount.
 If both conditions are met, return "Discounted price," otherwise return "Regular price."*/
 
-function calculateTicketPrice(a,b){
+/*function calculateTicketPrice(a,b){
 if(a<18 || b==true)
 {
    return "They get discount";
@@ -216,6 +216,75 @@ else
 //let a=18; i have given input 18 we should enter it
 //let b=true;i have given input 18 we should enter it
 console.log (calculateTicketPrice (a,b));
+
+
+15)Username Validation
+Write a function validateUsername that takes a username as input. The function should return
+"Valid" if the username has at least 6 characters and contains only letters and numbers.
+Otherwise, return "Invalid."*/
+/*
+function validateUsername(text){
+    if (text.length<=6)
+
+    {return "Valid"}
+
+    return "Invalid"
+}
+let text= "vinaynadide";
+
+console.log(validateUsername(text));
+
+/*16)Color Selection
+Write a function selectColor that takes a color choice ("red", "blue", "green") and whether the
+color is available (true or false). If the color is available and the choice is "blue" or "green,"
+return "Selected." If the choice is "red," return "Not available." For any other choice, return
+"Invalid choice."
+*/
+
+function selectColor(x){
+
+    if (x== "red"|| x=="blue" || x=="green"){
+        return true;
+    }
+ 
+   else if(x=="blue" || x=="green")
+   {
+    return "selected";
+   }
+   else if(x=="red"){
+    return "invalid"
+    
+   }
+
+
+}
+
+
+
+/*
+17) Adding and Removing Elements
+Create an array called `fruits` with initial values ["apple", "banana"]. Using the appropriate array
+methods, perform the following actions:
+- Add "orange" to the end of the array.
+- Remove the last element from the array.
+- Add "grape" to the beginning of the array.
+- Remove the first element from the array.
+Print the final array after each step.
+
+
+let fruits =["apple" , "banana"];
+console.log(fruits);
+fruits.push("orange");
+console.log(fruits);
+fruits.pop(fruits.length-1);
+console.log(fruits);
+fruits.unshift("grape");
+console.log(fruits);
+fruits.splice(0,1);
+console.log(fruits);*/
+
+
+
 
 
 
