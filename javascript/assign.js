@@ -2,6 +2,7 @@
 //Test Data :
 //console.log(truncate_string("Robin Singh",4));
 //"Robi"
+
 const name1 ='Robin singh';
 const truncate_string= name1.slice(0,4);
 console.log(truncate_string);
@@ -91,14 +92,16 @@ console.log(truncate_string1 );
 // prints a greeting based on the time of day: "Good morning" for hours 6-11, "Good afternoon" for
 // hours 12-17, and "Good evening" for hours 18-23.
 const hour = new Date().getHours();
+function greetTimeOfDay(hour){
 if (hour <12){
-    console.log("good morning");
+    return "good morning";
 }
 else if(hour < 18){
-    console.log("good afternoon");
+   return"good afternoon";
 }
 else {
-    console.log("good evening");
+  return "good evening"
+}
 }
 console.log(hour);
 
@@ -122,14 +125,17 @@ else {
 //  Write a function isLeapYear that takes a year as input and prints "Leap year" if the year is
 //  divisible by 4 and not divisible by 100, or if it's divisible by 400. Otherwise, print "Not a leap
 //  year.
+function leapyear(year){
 
-let year=2003;
 if ((year%4==0 && year%100!=0 ) || year%400==0){
-    console.log('leap year');
+    return 'leap year';
 }
 else{
-console.log('not leap year')
+return'not leap year';
 }
+}
+let year=2003;
+console.log(leapyear(year));
 // 10)Positive, Negative, or Zero
 // Write a function positiveNegativeZero that takes a number as input and prints "Positive" if the
 // number is greater than 0, "Negative" if it's less than 0, and "Zero" if it's equal to 0.
