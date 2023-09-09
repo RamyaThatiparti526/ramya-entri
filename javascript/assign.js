@@ -250,7 +250,7 @@ console.log(validateUsername(text));
 function selectColor(x){
 
     if (x== "red"|| x=="blue" || x=="green"){
-        return true;
+        return "true";
     }
  
    else if(x=="blue" || x=="green")
@@ -264,7 +264,7 @@ function selectColor(x){
 
 
  }
- let x="blue";
+ let x="orange";
  console.log(selectColor(x));
 
 
@@ -303,7 +303,7 @@ shoppingList[0]="eggs";
 shoppingList[1]="milk";
 shoppingList[2]="bread";
 shoppingList[3]="vegetables";
-shoppingList.splice(2,1);
+shoppingList.slice(2,1);
 console.log(shoppingList);
 
 
