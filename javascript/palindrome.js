@@ -16,7 +16,7 @@ function checkPalindrome(string) {
     return 'It is a palindrome';
 }
 
-let string="test"
+let string="madam"
 // call the function
 const value = checkPalindrome(string);
 

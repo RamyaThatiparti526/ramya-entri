@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>byelement</title>
-</head>
+<html>
 <body>
-    <h1>hi</h1>
-    <h2>hellow</h2>
-    <h3>how r u</h3>
-    <script>
-        const a=document.getElementsByTagName("h2")
-        alert(a[0]);
-    </script>
+
+<h1>JavaScript Strings</h1>
+<h2>The slice() Method</h2>
+
+<p>Extract a part of a string from position 7:</p>
+<p id="demo"></p>
+
+<script>
+    let text=" ";
+for(let i=5; i>0; i--)
+{
+   
+    for (let j=i;j>0;j--) {
+       
+        text+=j;  
+        console.log(text);  
+   
+    }
+
+ 
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
 </body>
 </html>
+
+

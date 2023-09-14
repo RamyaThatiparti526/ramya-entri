@@ -168,7 +168,7 @@ function calculateGrade(score){
  else(score<60)
  { return "F"}
 }
-let score =70;
+let score =80;
 console.log(calculateGrade(score));
 //==================================================================================================
 

@@ -24,6 +24,6 @@
 
 const withDuplicates = [2, 2, 5, 5, 1, 1, 2, 2, 3, 3];
 const withoutDuplicates = Array.from(new Set(withDuplicates));
-const withoutDuplicates = [...new Set(withDuplicates)];
+const Duplicates = [...new Set(withDuplicates)];
 console.log(withoutDuplicates)
 

@@ -1,0 +1,84 @@
+1. How do you find the length of a string in JavaScript?
+ans:string.length
+2. What method is used to convert a string to lowercase in JavaScript?
+ans: string.toLowerCase()
+3. Explain the purpose of the `toUpperCase()` method in JavaScript.
+ans: to convert lowercase letters to uppercase letters we use toUpperCase()
+4. How can you check if a string contains a specific substring in JavaScript?
+5. What does the `charAt()` method do in JavaScript?
+ans: we use CharAt() method to find the position of letter in string like index
+6. How do you replace a substring within a string using JavaScript?
+ ans:  string.replace(searchValue, newValue)
+7. What method can be used to split a string into an array in JavaScript?
+ans: split method used
+8. How can you remove leading and trailing whitespace from a string in JavaScript?
+ans: we use trim function to remove white sapces
+9. What method is used to concatenate two strings in JavaScript?
+ans: to add two strings we use concat
+10. How do you check if a string starts with a specific prefix in JavaScript?
+ans:startsWith() method used to check 
+
+
+
+21. How can you split a string into an array of words in JavaScript?
+ans: The split() method splits a string into an array of substrings. 
+22. What method is used to join the elements of an array into a single string in JavaScript?
+ans:  .join() method is used
+23. How do you convert an array of strings into a single string in JavaScript?
+ans: toString() method is used
+24. Explain the purpose of the `join()` method in JavaScript.
+ans: join method is used to add commaso addanything or specify the seperator in elements of an array
+25. What is the difference between `join()` and `toString()` for arrays in JavaScript?
+ans: join is used for specify seperator, to string method is used to to convert string from array
+26. How can you concatenate two arrays in JavaScript?
+   ans: array1. concat(array2);
+27. In JavaScript, how do you convert a string into an array of characters?
+ans: using split method to convert an array
+28. What method can you use to check if all elements in an array satisfy a condition in JavaScript?
+ans:for loop
+29. How do you find the maximum value in an array of numbers in JavaScript?
+ 
+Math.max(...arrayname);
+30. Explain the purpose of the `indexOf()` method in JavaScript.
+ans: index method is used to check position of the elements in the array
+
+
+31. How can you extract a substring from a string in JavaScript?
+ ans:substr() method using positions like string.substr(0,1);
+32. What method is used to remove an element from an array by its index in JavaScript?
+ans: using splice method
+33. How do you convert a string to an array of words in JavaScript?
+
+ans: The split() method splits a string into an array of substrings. The split() method returns the new array. The split() method does not change the original string. If (" ") is used as separator, the string is split between words.
+34. How can you add multiple elements to an array at once in JavaScript?
+push method is used to add elements in an array
+35. What method can you use to remove duplicates from an array in JavaScript?
+36. Explain the purpose of the `slice()` method in JavaScript.
+slice method is used to cut the characters in string
+37. How can you replace all occurrences of a substring in a string in JavaScript?
+38. What method is used to find the first occurrence of an element in an array in JavaScript?
+39. In JavaScript, how do you split a string into an array of characters?
+40. How can you convert an array of numbers into a string in JavaScript?
+
+
+41. How can you check if a string is a palindrome in JavaScript?
+42. What method is used to find the last occurrence of a substring in a string in JavaScript?
+43. How do you shuffle the elements of an array in JavaScript?
+44. Explain the purpose of the `map()` method for arrays in JavaScript.
+45. How can you reverse the order of words in a sentence using JavaScript?
+46. In JavaScript, how do you find the common elements between two arrays?
+47. What is the difference between `filter()` and `map()` methods for arrays in JavaScript?
+48. How can you split a string into an array of lines in JavaScript?
+49. Explain the purpose of the `reduce()` method for arrays in JavaScript.
+50. How do you find the intersection of two arrays in JavaScript?
+
+
+
+
+
+
+
+
+
+
+
