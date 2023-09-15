@@ -28,16 +28,20 @@
 
 
 
-function reverseString1(input){
-   
-    let reversed=" ";
-    for(let i=input.length-1;i>=0;i++){
+function reversestring(input){
+    
+    let reversed="";
+    for(let i=input.length-1; i>=0; i--){
         reversed+=input[i];
     }
-    console.log(reversed);
+    return reversed;
 }
+let input="hello"
+console.log(reversestring(input));
 
-console.log(reverseString1("hello"));
+
+
+
 
 
 
