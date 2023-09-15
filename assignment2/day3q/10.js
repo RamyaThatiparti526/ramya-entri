@@ -2,16 +2,16 @@
 
 
 
-let str = "Learning JavaScript";
-let noVowelsStr = str.replace(/[aeiou]/gi, '');
-console.log(noVowelsStr); //"Lrnng JvScrpt"
+// let str = "Learning JavaScript";
+// let noVowelsStr = str.replace(/[aeiou]/gi, '');
+// console.log(noVowelsStr); //"Lrnng JvScrpt"
 
 function removeVowels(str) {
     return str.replace(/[aeiou]/gi, '');
     
   }
 
-  let str = "ramya thatiparthi";
+  let str = "apple umbrella egg ink ox";
 console.log(removeVowels(str));
 
   
