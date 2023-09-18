@@ -12,19 +12,23 @@
    let y=str2.split('');
    let a=x.length;
    let b=y.length;
-   if(a!==b){
-    return false
-   }
-   let x1=x.sort();
+   console.log(a);
+   console.log(b);
+   if(b!=a){
+      return false
+     }
+   let x1=x.sort(); 
    console.log(x1);
    let y1=y.sort();
    console.log(y1);
-   if(x1!==y1){
-    return false;
-   }
-   return true;
+
+   for (let i = 0; i < a ; i++)
+   if (x1[i] != y1[i])
+      return false;
+
+return true;
 }
-let str1="listen";
+   let str1="listen";
 let str2="silent";
 console.log(isAnagram(str1,str2));
 
