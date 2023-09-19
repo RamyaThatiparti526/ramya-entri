@@ -7,13 +7,17 @@
 //    console.log(output); // 15
 
 function sumarray(arr){
-    let sum=0
-    for(let i=0; i<=arr.length; i++)
-    sum+=i;
-return sum;
+    let sum=0;
+    
+    for(let i=0; i<arr.length; i++)
+    sum += arr[i];
+    return sum;
+
 }
 
-let arr=[5,5,5,5];
+
+let arr=[5, 5, 5, 5];
+console.log(arr.length);
 console.log(sumarray(arr));
 
 
