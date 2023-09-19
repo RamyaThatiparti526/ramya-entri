@@ -21,10 +21,3 @@ function reverseWords(sentence){
  console.log (reverseWords(sentence));
 
  
-// let reversed= " ";
-// const name1="thatiparti";
-
-// for(let i=name1.length-1; i>=0; i--){
-//     reversed+=name1[i];
-//     console.log(reversed);
-// }

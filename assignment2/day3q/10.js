@@ -8,8 +8,7 @@
 
 function removeVowels(str) {
     return str.replace(/[aeiou]/gi, '');
-    
-  }
+    }
 
   let str = "apple umbrella egg ink ox";
 console.log(removeVowels(str));
