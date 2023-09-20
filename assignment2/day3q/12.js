@@ -12,10 +12,7 @@ function sumarray(arr){
     for(let i=0; i<arr.length; i++)
     sum += arr[i];
     return sum;
-
 }
-
-
 let arr=[5, 5, 5, 5];
 console.log(arr.length);
 console.log(sumarray(arr));
