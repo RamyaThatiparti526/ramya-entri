@@ -12,5 +12,6 @@
     return index;
     }
    let i='apple';
-    let arr=["banana","apple","cherry"];
+    let arr=["banana","apple","apple","cherry"];
     console.log(findIndex(arr));
+ doubt ::: if i array 2 values are same so how can i find indexof that;

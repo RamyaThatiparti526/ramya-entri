@@ -17,6 +17,7 @@ const person={
     console.log(person.emailid);
     console.log(person.hobbies.sports);
     console.log(person["name"]);
+    
     person.fname="thatiparti";
     console.log(person);
     delete person.dob;

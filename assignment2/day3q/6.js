@@ -15,7 +15,8 @@ function getUniqueAfterMerge(arr1, arr2){
 let arr = arr1.concat(arr2);
 let uniqueArr = [];
 // loop through array
-for(let i of arr) {
+for (let i=0; i<arr.length; i++){
+// for(let i of  arr) //we can write like this also.....
     if(uniqueArr.indexOf(i) === -1) {
         uniqueArr.push(i);
     }
