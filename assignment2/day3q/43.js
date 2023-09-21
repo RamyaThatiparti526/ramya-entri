@@ -11,7 +11,6 @@ function filterOddNumbers(numbers){
     return odds;
 }
 let numbers = [1, 2, 3, 4,5];
-// calling the function
-// passing array argument
+
 console.log(filterOddNumbers(numbers));
 

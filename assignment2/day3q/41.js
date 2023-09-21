@@ -21,7 +21,7 @@ function filterWordsByLength(strings,k){
 const result=strings.filter(strings=>strings.length==k);
 return result;
 }
-let k=4;
+let k=6;
 let strings=['sonu','harshit','ram','writer','vinay'];
 console.log(filterWordsByLength(strings,k));
 
