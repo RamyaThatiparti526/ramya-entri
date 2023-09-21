@@ -7,5 +7,13 @@ const inputString = "programming";
 // const inputChar = "m";
 // const output = countChar(inputString, inputChar);
 // console.log(output); // 2
-const x=inputString.indexOf(m);
-console.log(x);
+
+let arr = ["ramya", "eswar", "eswar","divya",
+          "maneeh", "naveen", "naveen"];
+  
+function removeDuplicates(arr) {
+    return arr.filter((item,  index) =>
+       
+        arr.indexOf(item) === index);
+}
+console.log(removeDuplicates(arr));

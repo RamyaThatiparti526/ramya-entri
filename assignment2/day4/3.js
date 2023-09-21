@@ -20,10 +20,13 @@ console.log(removeDuplicates(arr));
 // program to remove duplicate value from an array
 
 function getUnique(arr){
-// removing duplicate
+
+    // removing duplicate
     let uniqueArr = [...new Set(arr)];
-     return uniqueArr;
+
+   return uniqueArr;
 }
+
 const array = [1, 2, 3, 2, 3];
 
 // calling the function
