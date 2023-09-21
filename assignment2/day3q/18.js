@@ -15,4 +15,4 @@ let arr = [1, 2, 3, 4,5];
 // calling the function
 // passing array argument
 console.log(evenarray(arr));
-console.log(checkevennumber(numbers));
+

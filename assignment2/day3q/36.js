@@ -23,11 +23,10 @@
 // console.log(removeVowels(string));
 
 function Fn_count_Vowels(str) { 
-// find the count of vowels
-    let count = str.match(/[aeiou]/gi).length;
-// return number of vowels
-    return count;
+let count = str.match(/[aeiou]/gi).length;// find the count of vowels
+
+return count;// return number of vowels
 }
-// take input
+
 let str = "Hello World";
 console.log( Fn_count_Vowels(str));
