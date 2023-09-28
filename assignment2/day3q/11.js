@@ -21,16 +21,16 @@
    console.log(x1);
    let y1=y.sort();
    console.log(y1);
-
-   for (let i = 0; i < a ; i++)
-   if (x1[i] != y1[i])
+   for (let i = 0; i < a ; i++){
+   if (x1[i] != y1[i]){
       return false;
-
-return true;
-}
+   }
+   return true;
+   } 
+   }
    let str1="listen";
-let str2="silent";
-console.log(isAnagram(str1,str2));
+   let str2="silent";
+   console.log(isAnagram(str1,str2));
 
 
 

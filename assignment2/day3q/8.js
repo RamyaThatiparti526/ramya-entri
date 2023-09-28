@@ -11,6 +11,7 @@ function countWords(sentence){
   
    let words2=words.length;
    return words2;
+   
 
 }
 let sentence="hi am ramya thatiparthi";

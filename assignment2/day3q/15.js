@@ -8,24 +8,24 @@
    // const output = rotateArray(inputArray, k);
    // console.log(output); // [4, 5, 1, 2, 3]
 
-   function rotatearrya1(nums, k){
-      for(let i=0; i<k; i++){
-         nums.unshift(nums.pop());
-      }
-      return nums;
+   // function rotatearrya1(nums, k){
+   //    for(let i=0; i<k; i++){
+   //       nums.unshift(nums.pop());
+   //    }
+   //    return nums;
+   // }
+   // let k=3;
+   // let nums=[1,2,3,4,5];
+   // console.log(rotatearrya1(nums, k));
+
+   const rotatearray2 =function(nums, k){ for(let i=0; i<k; i++){
+   nums.unshift(nums.pop());
    }
+   return nums;
+  }
    let k=3;
    let nums=[1,2,3,4,5];
-   console.log(rotatearrya1(nums, k));
-
-//    const rotatearray2 =function(nums, k){ for(let i=0; i<k; i++){
-//    nums.unshift(nums.pop());
-//    }
-//    return nums;
-//   }
-//    let k=3;
-//    let nums=[1,2,3,4,5];
-//    console.log(rotatearray2(nums, k));
+   console.log(rotatearray2(nums, k));
 
    
 

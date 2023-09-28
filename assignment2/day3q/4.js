@@ -12,5 +12,5 @@ function countChar(str, x){
     return res;
 }
 let str = "ramya thatiparthi";
-let x = " a";
+let x = "t";
 console.log(countChar(str, x));

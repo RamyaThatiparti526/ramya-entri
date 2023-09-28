@@ -25,7 +25,6 @@ console.log(uniqueArr);
 }
 const array1 = [1, 2, 3];
 const array2 = [2, 3, 5]
-
 // calling the function
 // passing array argument
 getUniqueAfterMerge(array1, array2);

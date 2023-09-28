@@ -19,12 +19,12 @@ console.log(removeDuplicates(arr));
 
 // program to remove duplicate value from an array
 
-function getUnique(arr){
-// removing duplicate
-    let uniqueArr = [...new Set(arr)];
-     return uniqueArr;
-}
-const array = [1, 2, 3, 2, 3];
+// function getUnique(arr){
+// // removing duplicate
+//     let uniqueArr = [...new Set(arr)];
+//      return uniqueArr;
+// }
+// const array = [1, 2, 3, 2, 3];
 
 // calling the function
-console.log(getUnique(array));
+// console.log(getUnique(array));
