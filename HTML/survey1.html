@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            background-color: black;
+            text-align: center;
+            text-decoration: none;
+            padding: 30px;
+        }
+
+        .container{
+            max-width: 100%;
+            margin: 2px auto;
+            padding: 0px 2px;
+            border: 1px solid;
+        }
+
+        .main{
+            font-size: 40px;
+            margin: 2px 0px 1px;
+            color: white;
+            text-align: center;
+        }
+
+        .form-class{
+            margin: 2px 0px;
+        }
+
+        .form-control{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .heading{
+            margin: 1px 0px 0.6px;
+        }
+
+        .field{
+            font-size: 100%;
+        }
+
+        .text{
+            font-size: 100%;
+            margin-top: 40%;
+            padding: 5px;
+        }
+
+        .radio{
+            outline: none;
+        }
+
+        button{
+            font-size: 200%;
+            margin: 0px auto;
+            display: block;
+            color: white;
+            padding: 0.5px 0.8px;
+            border: 1px solid white;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="main">Survey Form:</h1>
+    <hr>
+<form class="form-class">
+    <div class="form-control">
+        <div class="heading">
+        <h3 class="field">Customer Name</h3>
+    <label for="cust" id="cust" name="cust" class="text">First Name</label>
+    <input type="text" id="cust" name="cust" placeholder="Enter Your First Name" required></div>
+    <br>
+
+    <div>
+        <label for="cust" id="cust" name="cust" class="text">Last Name</label>
+        <input type="text" id="cust" name="cust" placeholder="Enter Your Last Name" required>
+    </div>
+
+    <br>
+
+    <div class="heading">
+        <h3 class="field">Address</h3>
+        <label for="address" id="address" name="address" class="text">Street Address</label>
+        <input type="text" id="address" name="address" placeholder="Enter Your Address" required>
+    </div>
+    <br>
+    <div>
+        <label for="address" id="address" name="address" class="text">Street Address Line 2</label>
+        <input type="text" id="address" name="address" placeholder="Enter Your Address" required>
+    </div>
+    <br>
+    <div>
+        <label for="city" id="city" name="city" class="text">City</label>
+        <input type="text" id="city" name="city" placeholder="Enter Your City Name" required>
+    </div>
+    <br>
+    <div>
+        <label for="state" id="state" name="state" class="text">State</label>
+        <input type="text" id="state" name="state" placeholder="Enter Your State Name" required>
+    </div>
+    <br>
+    <div>
+        <label for="zip" id="zip" name="zip" class="text">Zip</label>
+        <input type="text" id="zip" name="zip" placeholder="Enter Your Zip Code" required>
+    </div>
+     <br>
+    <div>
+        <label for="district" id="district" name="district" class="text">Select Your District</label>
+            <select name="district" id="district"required>
+            <option value="Andaman">Andaman</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Maharashtra">Maharashtra</option>
+        </select>
+    </div>
+
+    <div class="heading">
+        <h3 class="field">Contact</h3>
+    </div>
+    <div><label for="phno" id="phno" name="phno" class="text">Phone Number</label>
+    <input type="number" name="phno" id="phno"></div>
+    <br>
+    <div><label for="email" id="email" name="email" class="text">Email</label>
+        <input type="email" name="email" id="email"></div>
+    
+    <div class="heading">
+        <h3>Personal Details</h3>
+    </div>
+    <div>
+        <input type="radio" id="male" name="gender">
+        <label for="male" id="male" name="gender">Male</label>
+        <br>
+        <input type="radio" id="female" name="gender">
+        <label for="female" id="female" name="gender">Female</label>
+        <br>
+        <input type="radio" id="other" name="gender">
+        <label for="other" id="other" name="gender">Other</label>
+    </div>
+
+    <div class="heading">
+        <h3 class="field">Ratings</h3>
+    </div>
+    <div>
+        <h5 class="field-inputs" style="margin:0.5rem 0px ;">Ratings 1:</h5>
+        <input type="radio" name="rating1" id="bad">
+        <label for="bad">Bad</label>
+        <input type="radio" name="rating1" id="good">
+        <label for="good">Good</label>
+        <input type="radio" name="rating1" id="excellent">
+        <label for="excellent">Excellent</label>
+        <br>
+        <h5 class="field-inputs" style="margin:0.5rem 0px ;">Ratings 2:</h5>
+        <input type="radio" name="rating1" id="bad">
+        <label for="bad">Bad</label>
+        <input type="radio" name="rating1" id="good">
+        <label for="good">Good</label>
+        <input type="radio" name="rating1" id="excellent">
+        <label for="excellent">Excellent</label>
+        <br>
+        <h5 class="field-inputs" style="margin:0.5rem 0px ;">Ratings 3:</h5>
+        <input type="radio" name="rating1" id="bad">
+        <label for="bad">Bad</label>
+        <input type="radio" name="rating1" id="good">
+        <label for="good">Good</label>
+        <input type="radio" name="rating1" id="excellent">
+        <label for="excellent">Excellent</label>
+        <br>
+        <h5 class="field-inputs" style="margin:0.5rem 0px ;">Ratings 4:</h5>
+        <input type="radio" name="rating1" id="bad">
+        <label for="bad">Bad</label>
+        <input type="radio" name="rating1" id="good">
+        <label for="good">Good</label>
+        <input type="radio" name="rating1" id="excellent">
+        <label for="excellent">Excellent</label>
+        <br>
+        <h5 class="field-inputs" style="margin:0.5rem 0px ;">Ratings 5:</h5>
+        <input type="radio" name="rating1" id="bad">
+        <label for="bad">Bad</label>
+        <input type="radio" name="rating1" id="good">
+        <label for="good">Good</label>
+        <input type="radio" name="rating1" id="excellent">
+        <label for="excellent">Excellent</label>
+        <br>
+        <h5 class="field-inputs" style="margin:0.5rem 0px ;">Ratings 6:</h5>
+        <input type="radio" name="rating1" id="bad">
+        <label for="bad">Bad</label>
+        <input type="radio" name="rating1" id="good">
+        <label for="good">Good</label>
+        <input type="radio" name="rating1" id="excellent">
+        <label for="excellent">Excellent</label>
+        <br>
+        <h5 class="field-inputs" style="margin:0.5rem 0px ;">Ratings 7:</h5>
+        <input type="radio" name="rating1" id="bad">
+        <label for="bad">Bad</label>
+        <input type="radio" name="rating1" id="good">
+        <label for="good">Good</label>
+        <input type="radio" name="rating1" id="excellent">
+        <label for="excellent">Excellent</label>
+    </div>
+    <br>
+    <button type="submit">Submit</button>
+</div>
+</div>
+</form>
+</body>
+</html>
