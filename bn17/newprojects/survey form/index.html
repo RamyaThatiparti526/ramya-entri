@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1>Feedback Survey</h1>
+        <p>We value your opinion! Please take a moment to complete our survey.</p>
+    </header>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="rating">Rate our service:</label>
+        <select id="rating" name="rating">
+            <option value="5">Excellent</option>
+            <option value="4">Very Good</option>
+            <option value="3">Good</option>
+            <option value="2">Fair</option>
+            <option value="1">Poor</option>
+        </select> <br><br>
+        <label for="feedback">Additional comments:</label>
+        <textarea id="feedback" name="feedback"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <footer>
+        <p>&copy; 2023 <b>Survey Form</b></p>
+    </footer>
+</body>
+</html>
