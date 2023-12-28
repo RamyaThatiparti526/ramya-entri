@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Example</title>
+    <script>
+       function clicker()
+       {
+         const a = document.getElementById("para");
+         a.innerHTML = a.innerHTML + " The Button is Clicked!!!";
+       }
+    </script>
+</head>
+<body>
+    
+    <h2>Events Example</h2>
+
+    <button onclick="clicker()">Click Here</button>
+
+    <p id="para"></p>
+</body>
+</html>

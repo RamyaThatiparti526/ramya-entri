@@ -28,3 +28,5 @@ objects:let person = {
 // }
 let fruits = ["Apple", "Banana", "Cherry"];
 console.log(fruits[0]);
+
+
