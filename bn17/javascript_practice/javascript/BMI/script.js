@@ -14,3 +14,4 @@ function calculateBMI(height, weight) {
 calculateBMI(1.75, 70);
 calculateBMI(1.63, 80);
 calculateBMI(1.85, 90);
+calculateBMI(2.85, 90);
