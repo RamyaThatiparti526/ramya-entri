@@ -1,0 +1,106 @@
+/* Basic styling, replace with your own styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background: url("pexels-ella-olsson-1640773.jpg") center/cover;
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.menu-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.menu-category h3 {
+    color: #ff9900;
+}
+
+.menu-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.menu-item img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.menu-item h4 {
+    margin-top: 10px;
+}
+
+.menu-item p {
+    color: #666;
+}
+
+.about-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 5px;
+}
+
