@@ -4,7 +4,7 @@
 
 let e = 10;
 let f = 10;
-console.log(x == y);
+console.log(e == f);
 let x = 12;
 let y = 10;
 console.log(x != y);
