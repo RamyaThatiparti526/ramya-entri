@@ -267,9 +267,7 @@ function selectColor(x){
     return "invalid";
     
    }
-
-
- }
+}
  let x="orange";
  console.log(selectColor(x));
 
