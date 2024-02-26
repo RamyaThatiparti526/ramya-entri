@@ -42,7 +42,6 @@ let book1 = {
 };
 
 console.log(book1.getInfo());
-
 book1.read();
 
 console.log(book1.title);
