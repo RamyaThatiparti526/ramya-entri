@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="input-box">
+   <input placeholder="Enter your todo here" class="inputbox" >
+   <button class="inputbutton" onclick="add()">Add Todo</button>
+    <p class="p-tag">hello</p>
+    <div class="ramya"></div>
+    </div>
+    <script>
+        let arr=["Ramya","Eswar","Naveen"]
+        
+        function display(){
+            let totalhtml="";
+            for(let i=0;i<arr.length;i++){
+                let todo=arr[i];
+                
+                let html=`<p>${todo} <button onclick="arr.splice(${i},1)
+                    
+                    display()"
+                    > delete</button><p>`;
+                totalhtml+=html;
+                console.log(totalhtml);
+               
+        }
+        document.querySelector('.ramya').innerHTML=totalhtml;
+
+    }
+
+     function add(){
+            let inputbox=document.querySelector(".inputbox").value;
+            arr.push(inputbox);
+            console.log(arr);
+            inputbox.value= " ";
+            display()
+        }
+     
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>To-do</h1>
+    <input placeholder="Enter your Tasks" class="todo-input">
+    <input type="date" class="date-input">
+    <button onclick="
+    Todo()
+    
+    ">add</button>
+    <div class="container"></div>
+
+      <script>
+        let myArray=[
+            {name:'Watch Tv',dueDate:'18-11-2023'},
+            {name:'Complete Homeworks',dueDate:'18-11-2023'},
+             {name:'Play Cricket',dueDate:'18-11-2023'},
+             {name:'Do excercise',dueDate:'18-11-2023'}];
+       
+function todo2(){
+    let arr2="";
+        for(let i=0;i<myArray.length;i++){
+        let data =myArray[i];
+        // let name=data.name;
+        // let dueDate=data.dueDate;
+
+         let {name,dueDate}=data
+         let html=`<p>${name}, ${dueDate} <button
+           onclick="
+           myArray.splice(${i},1)
+           todo2()" >Delete</button></p>`;
+         arr2+=html;
+            
+        }
+        console.log(arr2,23);
+         document.querySelector(".container").innerHTML=arr2;
+}
+
+        function Todo(){
+           let inputElement = document.querySelector(".todo-input");
+           let dateinputElement=document.querySelector(".date-input");
+           let dueDate=dateinputElement.value;
+           let value=inputElement.value;
+           myArray.push({
+            name:value,
+            dueDate:dueDate
+           });
+           console.log(myArray);
+          inputElement.value= " ";
+todo2()
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #subscribeButton {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.subscribed {
+    background-color: green; /* Change to desired color for subscribed state */
+}
+
+#bellSymbol {
+    vertical-align: middle;
+    margin-left: 5px; /* Adjust as needed */
+}
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <button id="subscribeButton" onclick="subscribe()">
+        <span id="subscribeText">Subscribe</span>
+        <span id="bellSymbol" style="display: none;">🔔</span>
+    </button>
+    <script>
+        function subscribe() {
+    var button = document.getElementById("subscribeButton");
+    var subscribeText = document.getElementById("subscribeText");
+    var bellSymbol = document.getElementById("bellSymbol");
+
+    // Toggle subscription status
+    if (button.classList.contains("subscribed")) {
+        button.classList.remove("subscribed");
+        subscribeText.textContent = "Subscribe";
+        bellSymbol.style.display = "none";
+    } else {
+        button.classList.add("subscribed");
+        subscribeText.textContent = "Subscribed";
+        bellSymbol.style.display = "inline";
+    }
+ 
+}
+
+    </script>
+    
+</body>
+</html>

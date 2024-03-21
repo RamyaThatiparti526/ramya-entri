@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button class="sub-btn" onclick="
+    subscribe()
+    ">Subscribe</button> 
+   <script>
+
+    function subscribe(){
+        const btnElement=document.querySelector('.sub-btn');
+        if(btnElement.innerHTML==='Subscribe'){
+            btnElement.innerHTML='Subscribed'
+            btnElement.classList.add('subscribed')
+        }else{
+            btnElement.innerHTML='Subscribe'
+            btnElement.classList.remove('subscribed')
+        }
+
+    }
+   </script>
+
+
+</body>
+</html>

@@ -8,20 +8,28 @@
   body {
     transition: background-color 1s ease;
   }
+  .name{
+    padding-top: 4%;
+    text-align: center;
+  }
 </style>
 </head>
 <body>
-
+<h1 class="name">RAMYA THATIPARTI</h1>
+<h1 class="name">ESWAR KHANNA ENUKONDA</h1>
+<h1 class="name">DIVYA BASANI</h1>
+<h1 class="name">NAVEEN NANI</h1>
+<h1 class="name">MANEESH MAIKE</h1>
 <script>
   // Function to generate a random color
   function getRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
+    for (var i = 0; i < 8; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
-  }
+}
 
   // Function to change the background color every 3 seconds
   function changeBackgroundColor() {

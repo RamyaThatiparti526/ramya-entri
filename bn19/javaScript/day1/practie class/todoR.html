@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDolist</title>
+</head>
+<body>
+    <input  placeholder="Enter your todo here" class="input-box">
+    <input type="date" class="input-date">
+    <button onclick="todo()
+        "class="todo-btn">Add</button>
+<div class="container"></div>
+    
+    <script>
+        let arr=[{name:'Watch tv',duedate:'11-8-2024'},{name:'Eat dinner',duedate:'04-01-2024'},{name:'paly badminton',duedate:'15-04-2024'}];
+
+        function add(){
+            let arr2="";
+            for(let i=0;i<arr.length;i++){
+                let data=arr[i];
+                let {name,duedate}=data;
+                let html=`<p>${name},${duedate}<button 
+                    onclick="
+                    arr.splice(${i},1) 
+                    add()">Delete</button></p>`;
+                arr2+=html;
+            }
+            document.querySelector(".container").innerHTML=arr2;
+        }
+        function todo(){
+
+            let inputelement=document.querySelector('.input-box').value;
+            let inputdate=document.querySelector('.input-date').valueAsDate;
+            arr.push({name:inputelement,duedate:inputdate});
+            add()
+        }
+
+        
+    </script>
+
+
+
+</body>
+</html>

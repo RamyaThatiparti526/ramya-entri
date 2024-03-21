@@ -24,15 +24,17 @@
            
               
     }
-    let{name,gender,age}=person; //destructuring assignment
-    
-     person.name="eswar";
-     person.born="hyd";
-     console.log(person.name);
-     console.log(person.name + " " + person.lname );
+    let{name1="sonu",gender,age}=person; //destructuring assignment
+    //we can assign new value to  the key of object using destructuring also
+    //  person.name="eswar";
+    //  person.born="hyd";
+    //  console.log(person.name);
+    //  console.log(person.name + " " + person.lname );
+       //console.log(person);
+     //  delete person.details
        console.log(person);
-//  console.log(person.fname);
- console.log(`${person.lname} is a ${person.details.position}`);
+
+     //console.log(`${person.lname} is a ${person.details.position}`);
 
     </script>
 </body>

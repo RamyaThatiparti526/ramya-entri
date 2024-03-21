@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input><button class="btn" onclick="
+        totalPrice()
+        ">Total Price </button>
+
+    <h1 class="bill"></h1>
+    <script>
+
+         function totalPrice(){
+
+            var inputvalue=document.querySelector('input');
+            var cost=Number(inputvalue.value);
+            if(cost>=100){
+
+                document.querySelector('.bill').innerHTML=cost;
+                
+            }else{
+                document.querySelector('.bill').innerHTML=cost+20;
+
+            }
+
+
+         }
+    </script>
+
+
+</body>
+</html>

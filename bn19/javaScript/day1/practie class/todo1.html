@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="input-box">
+   <input placeholder="Enter your todo here" class="inputbox" >
+   <input type="date" class="duedate">
+   <button class="inputbutton" onclick="add()">Add Todo</button>
+    <p class="p-tag"></p>
+    <div class="ramya"></div>
+    </div>
+    <script>
+        let arr=[{
+          todoname:"read books",
+          duedate:"2024-02-23"
+        },
+        {
+          todoname:"read books",
+          duedate:"2024-02-23"
+        }]
+        display()
+        function display(){
+            let totalhtml=" ";
+            for(let i=0;i<arr.length;i++){
+                let todo=arr[i];
+                
+                let html=`<div><p>${todo.todoname} </p>, <p>${todo.duedate}</p>,<button onclick="arr.splice(${i},1)
+                  console.log(arr)
+                    display()
+                  "
+                    > delete</button><div>`;
+                totalhtml=totalhtml+html;
+            
+                document.querySelector('.ramya').innerHTML=totalhtml;
+        }
+
+    }
+
+     function add(){
+            let inputboxele=document.querySelector(".inputbox");
+            let duedateele=document.querySelector(".duedate");
+            let inputbox=inputboxele.value;
+            let duedate=duedateele.value
+            arr.push({
+              todoname:inputbox,
+              duedate:duedate
+            });
+            console.log(arr);
+            display()
+        }
+     
+    </script>
+    
+</body>
+</html>

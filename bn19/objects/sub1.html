@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+       .subscribed{
+        text-align: center;
+       
+        margin-top:3px;
+       }
+       /* .img1{
+        text-align: center;
+        padding-top: 10px;
+       }      */
+       #bell{
+        margin-top: 3px;
+       }
+    </style>
+</head>
+<body>
+    <button class="btn" onclick="subscribe()">
+        <!-- <img  class="img1" src="bell.png" width="30" height="30"> -->
+        <!-- <i class="" class="bi bi-bell-fill"></i> -->
+        <i class="fa fa-bell" style="font-size:20px" id="bell"></i>
+       <span class="sub-text">Subscribe</span>
+    </button>
+    <script>
+        
+ 
+        function subscribe(){
+             var btnElement=document.querySelector('.btn');
+            var name1=document.querySelector(".sub-text");
+            var subimg=document.querySelector("#bell");
+            
+            if(btnElement.classList.contains('subscribed')) {
+                btnElement.classList.remove( 'subscribed' );
+                name1.textContent="Subscribe";
+                subimg.style.display='none';
+            }else{
+               btnElement.classList.add("subscribed"); 
+               name1.textContent="Subscribed";
+               subimg.style.display="inline";
+            }
+        }
+       
+    </script>
+</body>
+</html>
